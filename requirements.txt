@@ -5,10 +5,12 @@ certifi==2025.1.31
 click==8.1.8
 colorama==0.4.6
 Deprecated==1.2.18
+distro==1.9.0
 eval_type_backport==0.2.2
 exceptiongroup==1.2.2
 flake8==7.1.2
 griffe==1.6.3
+groq==0.20.0
 h11==0.14.0
 httpcore==1.0.7
 httpx==0.28.1
