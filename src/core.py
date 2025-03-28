@@ -2,7 +2,6 @@ import secrets
 from dotenv import load_dotenv
 from pydantic_ai.agent import Agent, AgentRunResult
 from pydantic_ai.messages import ModelMessage, ModelMessagesTypeAdapter
-import streamlit as st
 
 
 load_dotenv()
@@ -34,6 +33,3 @@ class SmartReply:
     def get_history(self) -> list[ModelMessage]:
         return self.store[self.session_id]
 
-
-st.title('Hello World')
-st.write('Ceci est ma première app.')
