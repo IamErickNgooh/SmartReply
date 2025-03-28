@@ -2,6 +2,8 @@ import secrets
 from dotenv import load_dotenv
 from pydantic_ai.agent import Agent, AgentRunResult
 from pydantic_ai.messages import ModelMessage, ModelMessagesTypeAdapter
+import streamlit as st
+
 
 load_dotenv()
 
@@ -33,9 +35,5 @@ class SmartReply:
         return self.store[self.session_id]
 
 
-# 🔍 Exemple d'utilisation :
-ask = SmartReply('groq:gemma2-9b-it', 'You are a powerful assistant for life tasks.')
-
-print(ask.ask_user('hello'))
-print(ask.ask_user('my name is Erick'))
-print(ask.ask_user('What is my name?'))
+st.title('Hello World')
+st.write('Ceci est ma première app.')
